@@ -14,8 +14,31 @@
       <script src="libs/babel.JS" charset="utf-8"></script>
 
       <script type="text/babel">
+         class TabelaChocolates extends React.Component{
+            render(){
+               return(
+                  <div>
+                     <table id="tabela" border="1">
+                        <thead>
+                           <tr>
+                              <th>Nome</th>
+                              <th>Marca</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>Laka</td>
+                              <td>Lacta</td>
+                           </tr>               
+                        </tbody>
+                     </table>
+                  </div>
+               )
+            }
+         }
 
-      const TabelaChocolates = () =>{
+
+      const TabelaChocolates__ = () =>{
          return(
             <div>
             <h1>Tabela de Chocolates</h1>
