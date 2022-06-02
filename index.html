@@ -15,9 +15,15 @@
            width: 50%;
          }
          
+         th {
+            background-color: #555756;
+            color: white;
+         }
+
          th, td {
            padding: 15px;
          }
+
       </style>
 
    </head>
@@ -31,63 +37,40 @@
       <script src="libs/babel.JS" charset="utf-8"></script>
 
       <script type="text/babel">
-         class TabelaChocolates extends React.Component{
-            render(){
-               return(
-                  <div>
-                     <table id="tabela">
-                        <thead>
-                           <tr>
-                              <th>Nome</th>
-                              <th>Marca</th>
-                           </tr>
-                        </thead>
-                        <tbody>
-                           <tr>
-                              <td>Laka</td>
-                              <td>Lacta</td>
-                           </tr>             
-                           <tr>
-                              <td>Batom</td>
-                              <td>Garoto</td>
-                           </tr>  
-                        </tbody>
-                     </table>
-                  </div>
-               )
-            }
+
+         const TabelaChocolates = (props) =>{
+            return(
+               <div>
+               <h1>{props.titulo}</h1>
+                  <table id="tabela">
+                     <thead>
+                        <tr>
+                           <th>Nome</th>
+                           <th>Marca</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Laka</td>
+                           <td>Lacta</td>
+                        </tr>                 
+                        <tr>
+                           <td>Batom</td>
+                           <td>Garoto</td>
+                        </tr>            
+                     </tbody>
+                  </table>
+               </div>
+            )
          }
 
-
-      const TabelaChocolates__ = () =>{
-         return(
-            <div>
-            <h1>Tabela de Chocolates</h1>
-               <table id="tabela" border="1">
-                  <thead>
-                     <tr>
-                        <th>Nome</th>
-                        <th>Marca</th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td>Laka</td>
-                        <td>Lacta</td>
-                     </tr>               
-                  </tbody>
-               </table>
-            </div>
+         ReactDOM.render(
+            <TabelaChocolates titulo="Tabela de Chocolates"/>
+            ,
+         document.getElementById("app")
          )
-      }
 
-      ReactDOM.render(
-         <TabelaChocolates />
-         ,
-      document.getElementById("app")
-      )
-
-   </script>
+      </script>
 
    </body>
 
