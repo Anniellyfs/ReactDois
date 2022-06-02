@@ -2,7 +2,24 @@
 
 <html>
    <head>
-      <title>ReceitaReact - 2</title>      
+      <title>ReceitaReact - 2</title>     
+      
+      <style>
+         table, td, th {  
+           border: 1px solid #ddd;
+           text-align: left;
+         }
+         
+         table {
+           border-collapse: collapse;
+           width: 50%;
+         }
+         
+         th, td {
+           padding: 15px;
+         }
+      </style>
+
    </head>
    <body>
 
@@ -18,7 +35,7 @@
             render(){
                return(
                   <div>
-                     <table id="tabela" border="1">
+                     <table id="tabela">
                         <thead>
                            <tr>
                               <th>Nome</th>
@@ -29,7 +46,11 @@
                            <tr>
                               <td>Laka</td>
                               <td>Lacta</td>
-                           </tr>               
+                           </tr>             
+                           <tr>
+                              <td>Batom</td>
+                              <td>Garoto</td>
+                           </tr>  
                         </tbody>
                      </table>
                   </div>
